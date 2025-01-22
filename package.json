@@ -14,7 +14,7 @@
     "@wix/redirects": "^1.0.44",
     "@wix/sdk": "^1.15.9",
     "@wix/stores": "^1.0.141",
-    "isomorphic-dompurify": "^2.9.0",
+    "isomorphic-dompurify": "^2.20.0",
     "js-cookie": "^3.0.5",
     "next": "^14.2.23",
     "react": "^18",
