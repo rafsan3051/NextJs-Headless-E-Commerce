@@ -55,7 +55,7 @@ const OrderPage = async ({ params }: { params: { id: string } }) => {
         </div>
       </div>
       </div>
-      <Link href="/" className="underline mt-6">
+      <Link href="https://www.facebook.com/hilificlothing/" className="underline mt-6">
         Have a problem? Contact us
       </Link>
     </div>

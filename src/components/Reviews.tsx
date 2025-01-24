@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Reviews = async ({ productId }: { productId: string }) => {
   const reviewRes = await fetch(
-    `https://api.fera.ai/v3/public/reviews?product.id=${productId}&public_key=${process.env.NEXT_PUBLIC_FERA_ID}`
+    `https://api.fera.ai/v3/private/reviews?product.id=${productId}&public_key=${process.env.NEXT_PUBLIC_FERA_ID}`
   );
   const reviews = await reviewRes.json();
 
-  return reviews.data.map((review: any) => (
+  return reviews.data && reviews.data.map((review:any) => (
     <div className="flex flex-col gap-4" key={review.id}>
       {/* USER */}
       <div className="flex items-center gap-4 font-medium">

@@ -56,7 +56,7 @@ const ProfilePage = async () => {
             placeholder={
               (user.member?.contact?.phones &&
                 user.member?.contact?.phones[0]) ||
-              "+1234567"
+              "+8801234567890"
             }
             className="ring-1 ring-gray-300 rounded-md p-2 max-w-96"
           />
@@ -81,7 +81,7 @@ const ProfilePage = async () => {
             >
               <span className="w-1/4">{order._id?.substring(0, 10)}...</span>
               <span className="w-1/4">
-                ${order.priceSummary?.subtotal?.amount}
+              ৳{order.priceSummary?.subtotal?.amount}
               </span>
               {order._createdDate && (
                 <span className="w-1/4">{format(order._createdDate)}</span>
